@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.alura.conversordivisas.HelloController"
+            fx:id="vistaPrincipal" prefHeight="340" prefWidth="520">
+    <top>
+        <HBox style="-fx-border-style: solid; -fx-border-color: black;">
+            <Label text="Andres"></Label>
+        </HBox>
+    </top>
+
+    <left>
+        <HBox style="-fx-border-style: solid; -fx-border-color: black;">
+            <Label text="Andres"></Label>
+        </HBox>
+    </left>
+
+
+
+</BorderPane>
