@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="600.0" style="-fx-background-color: #F3F5FC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alura.conversordivisas.controller.CurrencyOptionsController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: #F3F5FC;">
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="257.0" text="Tipo de Conversion" textAlignment="CENTER" textFill="#0a3871" />
+            <ComboBox fx:id="conversionTypeSelection" prefWidth="150.0" promptText="Seleccione un Tipo de Conversion" style="-fx-background-color: #0A3871; -fx-color: #000000;">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Convertir a Peso Colombiano" />
+                     <String fx:value="Convertir de Peso Colombiano a Otra Divisa" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="257.0" text="Monedas/Divisas Disponibles" textAlignment="CENTER" textFill="#0a3871" />
+            <ComboBox fx:id="currencySelection" prefWidth="150.0" promptText="Seleccione una Divisa" style="-fx-background-color: #0A3871; -fx-color: #000000;">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="USD - Dolar estadounidense" />
+                      <String fx:value="EUR - Euro" />
+                      <String fx:value="GBR - Libra Esterlina" />
+                      <String fx:value="JPY - Yen Japones" />
+                      <String fx:value="KRW - Won Sur-Coreano" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Region prefHeight="18.0" prefWidth="250.0" />
+            <HBox alignment="CENTER" prefHeight="28.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <Button fx:id="acceptButton" minWidth="80.0" mnemonicParsing="false" onAction="#onButtonClicked" style="-fx-background-color: #D8DFE8; -fx-border-color: #0a3871; -fx-border-radius: 8px;" text="Aceptar" textFill="#0a3871">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="goBackButton" minWidth="80.0" mnemonicParsing="false" onAction="#onButtonClicked" style="-fx-background-color: #D8DFE8; -fx-border-color: #0a3871; -fx-border-radius: 8px;" text="Volver" textFill="#0a3871">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane prefHeight="303.0" prefWidth="346.0">
+         <children>
+            <ImageView fitHeight="266.0" fitWidth="277.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagen-persona.png" />
+               </image>
+            </ImageView>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Pane>
+   </children>
+</HBox>
